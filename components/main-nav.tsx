@@ -33,11 +33,6 @@ const routes = [
     label: "Генератор Телефона",
     icon: Phone,
   },
-  {
-    href: "/terms",
-    label: "Правовая информация",
-    icon: FileText,
-  },
 ]
 
 export function MainNav() {
@@ -48,7 +43,7 @@ export function MainNav() {
 
   return (
     <>
-      <Button variant="ghost" size="icon" className="md:hidden fixed top-4 right-4 z-50" onClick={toggleMenu}>
+      <Button variant="ghost" size="icon" className="md:hidden fixed top-2 right-4 z-50" onClick={toggleMenu}>
         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </Button>
 
