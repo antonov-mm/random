@@ -6,6 +6,7 @@ import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Footer } from "@/components/footer"
 import type React from "react"
+import Link from "next/link"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -29,7 +30,11 @@ export default function RootLayout({
               <MainNav />
               <div className="flex-1">
                 <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+                    
                   <div className="container flex h-14 items-center justify-end">
+                    <Link href="/" className="text-xl font-bold hover:text-primary transition-colors">
+                      Рандомс
+                    </Link>
                     <ThemeToggle />
                   </div>
                 </header>
