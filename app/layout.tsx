@@ -36,7 +36,7 @@ export default function RootLayout({
           <div className="flex min-h-screen bg-background flex-col">
             <div className="flex flex-1">
               <MainNav />
-              <div className="flex-1">
+              <div className="flex-2">
                 <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
                     
                   <div className="container flex h-14 items-center justify-end">
