@@ -44,7 +44,7 @@ export const generateSNILS = (): string => {
   }
   const checkNum = (sum % 101).toString().padStart(2, "0")
 
-  return `${areaNum}-${personNum}-${recordNum} ${checkNum}`
+  return number + checkNum
 }
 
 // Генерация паспорта РФ
