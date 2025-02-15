@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { CreditCard, Phone, UserSquare2, FileText, Home, Menu, X } from "lucide-react"
+import { CreditCard, Phone, UserSquare2, FileText, Home, Menu, X, User, Key } from "lucide-react"
 import { useState } from "react"
 
 const routes = [
@@ -33,6 +33,16 @@ const routes = [
     label: "Генератор Телефона",
     icon: Phone,
   },
+  {
+    href: "/fullname",
+    label: "Генератор ФИО",
+    icon: User,
+  },
+  {
+    href: "/password",
+    label: "Генератор Пароля",
+    icon: Key,
+  }
 ]
 
 export function MainNav() {

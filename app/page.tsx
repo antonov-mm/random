@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
-import { CreditCard, Phone, UserSquare2, FileText } from "lucide-react"
+import { CreditCard, Phone, UserSquare2, FileText, User, Key } from "lucide-react"
 
 const features = [
   {
@@ -27,6 +27,18 @@ const features = [
     icon: Phone,
     href: "/phone",
   },
+  {
+    title: "Генератор ФИО",
+    description: "Генерация случайных фамилии, имени и отчества",
+    icon: User,
+    href: "/fullname",
+  },
+  {
+    title: "Генератор Пароля",
+    description: "Генерация случайного пароля с настраиваемыми параметрами",
+    icon: Key,
+    href: "/password",
+  }
 ]
 
 export default function Home() {
