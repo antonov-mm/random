@@ -38,12 +38,18 @@ export default function RootLayout({
               <MainNav />
               <div className="flex-2">
                 <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-                    
-                  <div className="container flex h-14 items-center justify-end">
-                    <Link href="/" className="text-xl font-bold hover:text-primary transition-colors">
-                      Рандомс
-                    </Link>
-                    <ThemeToggle />
+                  <div className="container flex h-14 items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="md:hidden flex items-center gap-2">
+                        <ThemeToggle />
+                      </div>
+                      <Link href="/" className="text-xl font-bold hover:text-primary transition-colors">
+                        Рандомс
+                      </Link>
+                    </div>
+                    <div className="hidden md:block">
+                      <ThemeToggle />
+                    </div>
                   </div>
                 </header>
                 <main className="container py-6">{children}</main>
