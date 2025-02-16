@@ -7,7 +7,6 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { Footer } from "@/components/footer"
 import type React from "react"
 import Link from "next/link"
-import { AppRoot, SplitLayout, SplitCol, Panel, PanelHeader } from "@vkontakte/vkui"
 
 const inter = Inter({ subsets: ["latin"] })
 
